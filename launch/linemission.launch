@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find prrexamples)/launch/linemission.launch">
+    <arg name="x_pos" value="-1"/>
+    <arg name="y_pos" value="-3"/>
+  </include>
+
+  <node pkg="line_follower" type="line_follower.py" name="line_follower" output="screen"/>
+</launch>
